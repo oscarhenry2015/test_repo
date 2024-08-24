@@ -1,0 +1,5 @@
+---
+- name: Configure IP Addresses on interfaces
+  cisco.ios.ios_l3_interfaces:
+    config: "{{ lookup('template', 'interfaces.j2') }}"
+    state: merged

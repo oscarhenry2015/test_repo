@@ -1,0 +1,5 @@
+interface_addresses:
+  FastEthernet1/0: 23.23.23.2/24
+  FastEthernet0/0: 24.24.24.2/24
+  GigabitEthernet3/0: 2.2.2.2/24
+  

@@ -1,0 +1,4 @@
+---
+# defaults file for test_role
+# Default values for variables, can be overridden by host_vars or inventory
+interface_addresses: {}

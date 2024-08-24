@@ -1,0 +1,13 @@
+---
+- name: Main playbook to run multiple tasks
+  hosts: routers
+  gather_facts: no
+  become: true
+  become_method: enable
+  
+  vars:
+    ansible_become_pass: class
+
+  tasks:
+    - name: Include IP configuration tasks
+      include_tasks: configure_ip_addresses.yml

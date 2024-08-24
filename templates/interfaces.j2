@@ -1,0 +1,5 @@
+{% for name, address in interface_addresses.items() %}
+- name: {{ name }}
+  ipv4:
+    - address: {{ address }}
+{% endfor %}
